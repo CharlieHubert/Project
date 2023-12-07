@@ -1,3 +1,91 @@
-<html>
-    <div>Hello World</div>
+<!DOCTYPE html>
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link href="style.css" type="text/css" rel="stylesheet">
+	<title>Underground Kitchen Online Order</title>
+</head>
+
+<body>
+	<header id ="Home">
+		<a href="https://parkhurstdiningblog.com/" id="logo" alt="Parkhurst logo" title="Parkhurst logo">
+			<img class = "logo" src="./images/parkhurstimage.png" alt="Parkhurst logo">
+		</a>
+		<h1>Underground Kitchen</h1>
+    </header>
+	<main>
+		<nav>
+			<a href ="#" class="current">Home</a>
+			<a href="#menu">Menu</a>
+			<a href="#about">About</a>
+			<a href="#contact">Contact Us</a>
+			<a href="#place-order">Place Order</a>
+		</nav>
+		
+		<div id="menu" class ="menu">
+			<h2 class = "menu">Menu</h2>
+			<ul id="menu-list"></ul>
+		</div>
+		
+		<div id="about">
+			<div id = "about-content">
+			  <h2 class="about">About</h2>
+				<p>Parkhurst Dining was founded in 1996, and was built on the solid foundation of food service and hospitality expertise from our restaurant roots.
+					There are multiple locations here on Hanover College Campus, The CC, The UG, and The Shoebox. Parkhurst runs all three of these dining options for the students and with their best interests at heart.
+				</p>			  
+				<img src="./images/UG.jpg">
+				<p>Underground (La Cantina and The Grille)
+				
+				Bowls, Burritos & more
+				
+				ACADEMIC YEAR HOURS
+				
+				Monday - Sunday: 11am — 11 pm
+				
+				Meal Exhange Hours: Monday - Sunday 11am - 11pm
+				(ALL Meal Plans limited to 1 swipe per Retail Meal Period)</p>
+			</div>
+		  </div>
+
+		  <div id="contact" class = "contact-section">
+				<div class="contact-content">
+				  <h2 >Contact Us</h2>
+					<p>Visit us at our address or call us at 05050515-122330. Our team is ready to assist you with any questions or inquiries you may have. We take pride in providing a warm and welcoming atmosphere for our guests.</p>
+					<p>Whether you're planning a casual meal with friends or a special event, we have a range of options to suit your needs. From our diverse menu to our full-service catering, we strive to make every dining experience memorable.</p>
+					<p><span>FYI!</span> We offer full-service catering for any event, large or small. Our experienced team understands your needs, and we will tailor the food to satisfy the biggest criteria of them all—both look and taste.</p>
+					<p><strong>Reserve</strong> a table to enjoy our delicious dishes. Ask about today's specials or simply send us a message using the form below. We value your feedback and look forward to serving you!</p>
+
+				  <form id = "contact-form">
+					<p><input  type="text" placeholder="Name" required="" name="Name"></p>
+					<p><input  type="number" placeholder="How many people" required="" name="People"></p>
+					<p><input  type="datetime-local" placeholder="Date and time" required="" name="date" value="2020-11-16T20:00"></p>
+					<p><input  type="text" placeholder="Message \ Special requirements" required="" name="Message"></p>
+					<p><button  type="submit" onclick="sendMessage()">SEND MESSAGE</button></p>
+				  </form>
+				</div>
+			</div>
+
+			<section id="place-order" class="order-section">
+				<h2>Place Your Order</h2>
+				<div class="order-content">
+					<form id="order-form">
+                		<label for="item">Select Item:</label>
+                	<select id="item" name="item">
+                    	<option value="burger">Hamburger</option>
+                    	<option value="chicken">Grilled Chicken</option>
+						<option value="Burrito">Burrito</option>
+						<option value="Bowl">Bowl</option>
+						<option value="Grilled Cheese">Grilled Cheese</option>
+                	</select>
+
+                		<label for="quantity">Quantity:</label>
+                		<input type="number" id="quantity" name="quantity" min="1" value="1">
+
+                		<button type="button" class="order-button" onclick=submitOrder()>Submit Order</button>
+            		</form>
+				</div>
+        	</section>
+		</main>
+	<script src="code.js"></script>
+</body>
 </html>

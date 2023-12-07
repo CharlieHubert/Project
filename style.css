@@ -1,0 +1,202 @@
+ul {
+    list-style-type: none;
+}
+
+image {
+    width: 150px;
+    object-fit: contain;
+}
+img.logo{
+    object-fit: contain;
+    height: 50px;
+}
+img.huge{
+  height: 400px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
+
+header {
+    display: flex;
+    justify-content: center; 
+    align-items: left;
+    background-color: black;
+    color: white; 
+}
+
+h1 {
+    padding: 0;
+    margin: 0.5em;
+    color: white;
+    font-size: 150%;
+}
+
+body {
+    margin: 0;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+}
+
+nav {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color:White; 
+  padding: 10px;
+}
+  nav a {
+    padding: 10px; 
+    text-decoration: none; 
+    color: black;
+    border-bottom: 2px solid lightgray; 
+  }
+  
+  nav a.current {
+    border-color: blue;
+  }
+  
+  nav a:hover {
+    border-color: darkgray;
+  }
+
+  div.menu {
+    background-color: black;
+}
+#about-content {
+  transition: opacity 1s ease; /* CSS transition for opacity */
+}
+h2 {
+    text-align: center;
+    color: black;
+    font-size: 130%;
+    font-variant: small-caps;
+    margin: 10px;
+}
+
+li.menuitems {
+    display: flex; 
+    background-color: orange;
+    align-items: center; 
+    padding: 10px;
+    border-radius: 5px;
+    border-color: lightgray;
+    border : 1px solid
+  }
+  
+li.menuitems img {
+  margin-right: 10px; 
+}
+
+li.menuitems:hover {
+  background-color: lightgray; 
+}
+
+p {
+  margin: .2em 2em;
+}
+
+li.menuitems ul {
+  padding-left: 0;
+}
+
+h2.menu{
+  color:white;
+}
+#about {
+  color: black;
+  padding: 20px;
+}
+
+#place-order {
+  padding: 50px; /* Adjust the padding to control the size of the section */
+}
+
+.order-section {
+  background-color: #fff; /* Set a background color for the entire section */
+}
+
+.order-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 800px; /* Limit the width of the content within the section */
+  margin: 0 auto; /* Center the content within the section */
+}
+
+.order-content img {
+  width: 300px; /* Adjust the width of the image */
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.order-content form {
+  flex: 1;
+  margin-right: 20px; /* Add some spacing between the form and the image */
+}
+
+/* Style the form input and button */
+.order-content select,
+.order-content input,
+.order-content button {
+  padding: 10px;
+  margin-bottom: 10px;
+  width: 100%;
+}
+.order-button {
+  background-color: #4CAF50;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.order-button:hover {
+  background-color: #45a049;
+}
+
+#contact {
+  padding: 50px; /* Adjust the padding to control the size of the section */
+}
+
+.contact-section {
+  background-color: #f8f9fa; /* Set a background color for the entire section */
+}
+
+.contact-content {
+  max-width: 600px; /* Limit the width of the content within the section */
+  margin: 0 auto; /* Center the content within the section */
+}
+
+.contact-content h2 {
+  font-size: 24px; /* Increase the font size of the section title */
+}
+
+.contact-content form {
+  margin-top: 20px; /* Add some spacing between the paragraphs and the form */
+}
+
+/* Style the form input and button */
+.contact-content input,
+.contact-content button {
+  padding: 10px;
+  margin-bottom: 10px;
+  width: 100%;
+}
+
+.contact-content button {
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.contact-content button:hover {
+  background-color: #0056b3;
+}
