@@ -23,12 +23,13 @@ Welcome to the Underground Kitchen, where you can explore our delicious menu and
 
 ## JavaScript
 - Page load handler and event handlers for dynamic content loading.
-- Use of a timer to effect change.
+- Use of a timer to effect change in the about content.
 - Submission of orders and messages with dynamic data.
 
 ## Express Server
 - Serves static content and provides a simple API for dynamic data.
 - API endpoint: api/menu
+- click on menu link and the menu will show up on the page
 
 ## How to Run Locally
 
