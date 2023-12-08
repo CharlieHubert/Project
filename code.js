@@ -34,7 +34,7 @@ function changeAboutContentWithFadeInEffect() {
     if (aboutContentElement) {
         setTimeout(() => {
             aboutContentElement.innerHTML = `
-                <h2>What Are You Still Here? Get On Down To The UG!</h2>
+                <h2>Why Are You Still Here? Get On Down To The UG!</h2>
                 <img class="huge" src="./images/go.png">
             `;
             aboutContentElement.style.opacity = '0';
@@ -75,7 +75,7 @@ window.onload = () => {
     displayMenu();
     changeAboutContentWithFadeInEffect();
 
-    fetch(`http://localhost:8080/api/test`) 
+    fetch(`http://localhost:3000/api/test`) 
     .then(response => {
       if (!response.ok) {
         throw new Error(`HTTP error! Status: ${response.status}`);
