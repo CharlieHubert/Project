@@ -28,7 +28,7 @@ Welcome to the Underground Kitchen, where you can explore our delicious menu and
 
 ## Express Server
 - Serves static content and provides a simple API for dynamic data.
-- API endpoint: api/test
+- API endpoint: api/menu
 
 ## How to Run Locally
 
@@ -37,4 +37,5 @@ Welcome to the Underground Kitchen, where you can explore our delicious menu and
 3. Run the following commands:
 
 npm install
-node server.js
+
+node server.mjs
