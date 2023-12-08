@@ -37,4 +37,5 @@ Welcome to the Underground Kitchen, where you can explore our delicious menu and
 3. Run the following commands:
 
 npm install
-node server.js
+
+node server.mjs
