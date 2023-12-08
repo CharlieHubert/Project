@@ -67,9 +67,7 @@ nav {
   div.menu {
     background-color: black;
 }
-#about-content {
-  transition: opacity 1s ease; /* CSS transition for opacity */
-}
+
 h2 {
     text-align: center;
     color: black;
@@ -113,33 +111,26 @@ h2.menu{
 }
 
 #place-order {
-  padding: 50px; /* Adjust the padding to control the size of the section */
+  padding: 50px; 
 }
 
 .order-section {
-  background-color: #fff; /* Set a background color for the entire section */
+  background-color: #fff; 
 }
 
 .order-content {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  max-width: 800px; /* Limit the width of the content within the section */
-  margin: 0 auto; /* Center the content within the section */
-}
-
-.order-content img {
-  width: 300px; /* Adjust the width of the image */
-  border: 1px solid #ccc;
-  border-radius: 5px;
+  max-width: 800px; 
+  margin: 0 auto;
 }
 
 .order-content form {
   flex: 1;
-  margin-right: 20px; /* Add some spacing between the form and the image */
+  margin-right: 20px;
 }
 
-/* Style the form input and button */
 .order-content select,
 .order-content input,
 .order-content button {
@@ -161,27 +152,26 @@ h2.menu{
 }
 
 #contact {
-  padding: 50px; /* Adjust the padding to control the size of the section */
+  padding: 50px; 
 }
 
 .contact-section {
-  background-color: #f8f9fa; /* Set a background color for the entire section */
+  background-color: #f8f9fa; 
 }
 
 .contact-content {
-  max-width: 600px; /* Limit the width of the content within the section */
-  margin: 0 auto; /* Center the content within the section */
+  max-width: 600px; 
+  margin: 0 auto; 
 }
 
 .contact-content h2 {
-  font-size: 24px; /* Increase the font size of the section title */
+  font-size: 24px; 
 }
 
 .contact-content form {
-  margin-top: 20px; /* Add some spacing between the paragraphs and the form */
+  margin-top: 20px; 
 }
 
-/* Style the form input and button */
 .contact-content input,
 .contact-content button {
   padding: 10px;

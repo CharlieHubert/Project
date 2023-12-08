@@ -74,43 +74,22 @@ function submitOrder() {
 window.onload = () => {
     displayMenu();
     changeAboutContentWithFadeInEffect();
-    fetchMenuData();
-  };
+
+    fetch(`http://localhost:8080/api/test`) 
+    .then(response => {
+      if (!response.ok) {
+        throw new Error(`HTTP error! Status: ${response.status}`);
+      }
+      return response.json();
+    })
+    .then(data => {
+      console.log('Data from server:', data);
+      const dataContainer = document.getElementById('data-container');
+      const dataMessage = document.createElement('p');
+      dataMessage.textContent = `Data from server: ${JSON.stringify(data)}`;
+
+      dataContainer.appendChild(dataMessage);
+    })
+    .catch(error => console.error('Error fetching data:', error));
+};
   
-  function fetchMenuData() {
-    fetch('/api/menu')
-      .then(response => {
-        if (!response.ok) {
-          throw new Error('Network response was not ok');
-        }
-        return response.json();
-      })
-      .then(data => {
-        // Process and use the fetched data as needed
-        console.log(data);
-        // For example, you can call a function to update your menu
-        updateMenu(data);
-      })
-      .catch(error => console.error('Error fetching data:', error));
-  }
-  
-  function updateMenu(menuData) {
-    const menuListElement = document.getElementById('menu-list');
-  
-    if (menuListElement) {
-      menuListElement.innerHTML = '';
-  
-      menuData.forEach(item => {
-        const listItem = document.createElement('li');
-        listItem.className = 'menuitems';
-        listItem.innerHTML = `
-            <img src="${item.image}">
-            <section>
-                <h3>${item.name}</h3>
-                <p>${item.description}</p>
-            </section>
-        `;
-        menuListElement.appendChild(listItem);
-      });
-    }
-  }
